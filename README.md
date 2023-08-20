@@ -8,7 +8,8 @@
 npm run
 ``
 <link rel="stylesheet" href="./src/app.css">
-
+  <style></style>
+  
 ## Preview
 <div class="div">
     <div>
@@ -16,5 +17,5 @@ npm run
     <div/>
     <div>
     <img width="500" src="./public/Images/Preview1.png" alt="">
-<div/>
-<div/>
+</div>
+</div>
