@@ -63,7 +63,9 @@
   border-radius: 0.75rem;
   margin-bottom: 1.5rem;
 }
-
+.div img{
+  border-radius: 50px;
+}
 .note-item__header {
   display: flex;
   align-items: center;
