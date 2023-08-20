@@ -71,6 +71,8 @@
   padding-bottom: 0.3rem;
   margin-bottom: 0.3rem;
   border-bottom: 1px solid var(--text-100);
+  flex-direction: row-reverse;
+  
 }
 
 .note-item.completed .title {
