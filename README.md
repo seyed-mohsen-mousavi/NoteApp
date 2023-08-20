@@ -7,20 +7,13 @@
 ``
 npm run
 ``
-
+<link rel="stylesheet" href="./src/app.css">
 ## Preview
 <div class="div">
     <div>
-    <img src="./public/Images/Preview.png" alt="">
+    <img width="500" src="./public/Images/Preview.png" alt="">
     <div/>
     <div>
-    <img src="./public/Images/Preview1.png" alt="">
-    <div/>
+    <img width="500" src="./public/Images/Preview1.png" alt="">
 <div/>
-<style>
-    .div{}
-    img{
-        border-radius: 10px;
-        width:500px
-    }
-<style/>
+<div/>
