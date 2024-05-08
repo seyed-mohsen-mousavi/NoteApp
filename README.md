@@ -1,8 +1,9 @@
 # Note App
 
-### Demo
+## Demo
 
-you can see demo [heare]("https://seyed-mohsen-mousavi.github.io/NoteApp/")
+
+Click [heare](https://seyed-mohsen-mousavi.github.io/NoteApp/) to preview the project
 
 ### Installation tools
 
