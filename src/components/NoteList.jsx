@@ -1,3 +1,5 @@
+import { TrashIcon } from "@heroicons/react/24/outline";
+
 function NoteList({ nots, onDelete, onfinished }) {
 
   
@@ -46,7 +48,7 @@ function NoteItem({ nots, onDelete, onfinished }) {
             ></label>
           </div>
           <button onClick={() => onDelete(nots.id)}>
-            <img src="./Images/icons8-remove-48.png" width={30} alt="" />
+            <TrashIcon width={20} style={{color:"red" , marginRight: "15px"}} />
           </button>
         </div>
         <div>

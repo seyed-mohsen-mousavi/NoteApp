@@ -55,6 +55,7 @@
   padding: 0rem 0.45rem;
   font-size: 0.75rem;
   color: var(--text-100);
+  margin-right: 5px;
 }
 
 .note-item {
@@ -125,6 +126,9 @@
   color: #757575;
 }
 @media screen and (max-width: 868px) {
+  .note-container{
+    width: 100%;
+  }
   .error {
     font-size: 13px;
   }

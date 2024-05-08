@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import "./App.css";
 import AddNewNote from "./components/AddNewNote";
 import NoteList from "./components/NoteList";
@@ -23,9 +23,15 @@ function App() {
       }
     }
   }
-  const [nots, dispach] = useReducer(hanleReducer, []);
+  const [nots, dispach] = useReducer(
+    hanleReducer,
+    JSON.parse(localStorage.getItem("NOTS")) || []
+  );
   const [sortbuy, setSortBuy] = useState("latest");
 
+  useEffect(() => {
+    localStorage.setItem("NOTS", JSON.stringify(nots));
+  }, [nots]);
   const handleADDNots = (newNote) => {
     dispach({ type: "add", payload: newNote });
   };
