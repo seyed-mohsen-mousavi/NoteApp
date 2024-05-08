@@ -37,7 +37,7 @@
 .note-container {
   width: 60%;
 }
-.no-nots{
+.no-nots {
   margin-top: 20vh;
 }
 .note-status {
@@ -52,7 +52,7 @@
   border-radius: 2rem;
   display: inline-block;
   background-color: var(--text-400);
-  padding: 0.2rem 0.3rem;
+  padding: 0rem 0.45rem;
   font-size: 0.75rem;
   color: var(--text-100);
 }
@@ -63,7 +63,7 @@
   border-radius: 0.75rem;
   margin-bottom: 1.5rem;
 }
-.div img{
+.div img {
   border-radius: 50px;
 }
 .note-item__header {
@@ -74,7 +74,6 @@
   margin-bottom: 0.3rem;
   border-bottom: 1px solid var(--text-100);
   flex-direction: row-reverse;
-  
 }
 
 .note-item.completed .title {
@@ -101,7 +100,7 @@
 
 .note-item__header .actions {
   display: flex;
-  gap: .4rem;
+  gap: 0.4rem;
   align-items: center;
 }
 
@@ -117,23 +116,23 @@
   text-align: left;
   direction: rtl;
 }
-::placeholder{
+::placeholder {
   font-family: "LAL";
 }
-.error{
+.error {
   margin: -10px 8px;
   text-align: right;
   color: #757575;
 }
-@media screen and (max-width:868px) {
-  .error{
+@media screen and (max-width: 868px) {
+  .error {
     font-size: 13px;
   }
-  .note-app{
+  .note-app {
     flex-direction: column;
     align-items: center;
   }
-  .add-new-note{
+  .add-new-note {
     width: 90%;
   }
 }
@@ -142,29 +141,29 @@
 }
 
 .checkbox-wrapper-10 .tgl,
-  .checkbox-wrapper-10 .tgl:after,
-  .checkbox-wrapper-10 .tgl:before,
-  .checkbox-wrapper-10 .tgl *,
-  .checkbox-wrapper-10 .tgl *:after,
-  .checkbox-wrapper-10 .tgl *:before,
-  .checkbox-wrapper-10 .tgl + .tgl-btn {
+.checkbox-wrapper-10 .tgl:after,
+.checkbox-wrapper-10 .tgl:before,
+.checkbox-wrapper-10 .tgl *,
+.checkbox-wrapper-10 .tgl *:after,
+.checkbox-wrapper-10 .tgl *:before,
+.checkbox-wrapper-10 .tgl + .tgl-btn {
   box-sizing: border-box;
 }
 
 .checkbox-wrapper-10 .tgl::-moz-selection,
-  .checkbox-wrapper-10 .tgl:after::-moz-selection,
-  .checkbox-wrapper-10 .tgl:before::-moz-selection,
-  .checkbox-wrapper-10 .tgl *::-moz-selection,
-  .checkbox-wrapper-10 .tgl *:after::-moz-selection,
-  .checkbox-wrapper-10 .tgl *:before::-moz-selection,
-  .checkbox-wrapper-10 .tgl + .tgl-btn::-moz-selection,
-  .checkbox-wrapper-10 .tgl::selection,
-  .checkbox-wrapper-10 .tgl:after::selection,
-  .checkbox-wrapper-10 .tgl:before::selection,
-  .checkbox-wrapper-10 .tgl *::selection,
-  .checkbox-wrapper-10 .tgl *:after::selection,
-  .checkbox-wrapper-10 .tgl *:before::selection,
-  .checkbox-wrapper-10 .tgl + .tgl-btn::selection {
+.checkbox-wrapper-10 .tgl:after::-moz-selection,
+.checkbox-wrapper-10 .tgl:before::-moz-selection,
+.checkbox-wrapper-10 .tgl *::-moz-selection,
+.checkbox-wrapper-10 .tgl *:after::-moz-selection,
+.checkbox-wrapper-10 .tgl *:before::-moz-selection,
+.checkbox-wrapper-10 .tgl + .tgl-btn::-moz-selection,
+.checkbox-wrapper-10 .tgl::selection,
+.checkbox-wrapper-10 .tgl:after::selection,
+.checkbox-wrapper-10 .tgl:before::selection,
+.checkbox-wrapper-10 .tgl *::selection,
+.checkbox-wrapper-10 .tgl *:after::selection,
+.checkbox-wrapper-10 .tgl *:before::selection,
+.checkbox-wrapper-10 .tgl + .tgl-btn::selection {
   background: none;
 }
 
@@ -182,7 +181,7 @@
 }
 
 .checkbox-wrapper-10 .tgl + .tgl-btn:after,
-  .checkbox-wrapper-10 .tgl + .tgl-btn:before {
+.checkbox-wrapper-10 .tgl + .tgl-btn:before {
   position: relative;
   display: block;
   content: "";
@@ -210,7 +209,7 @@
 }
 
 .checkbox-wrapper-10 .tgl-flip + .tgl-btn:after,
-  .checkbox-wrapper-10 .tgl-flip + .tgl-btn:before {
+.checkbox-wrapper-10 .tgl-flip + .tgl-btn:before {
   display: inline-block;
   transition: all 0.4s ease;
   width: 100%;
@@ -229,7 +228,7 @@
 
 .checkbox-wrapper-10 .tgl-flip + .tgl-btn:after {
   content: attr(data-tg-on);
-  background: #02C66F;
+  background: #02c66f;
   transform: rotateY(-180deg);
 }
 
@@ -249,7 +248,7 @@
 .checkbox-wrapper-10 .tgl-flip:checked + .tgl-btn:after {
   transform: rotateY(0);
   left: 0;
-  background: #7FC6A6;
+  background: #7fc6a6;
 }
 
 .checkbox-wrapper-10 .tgl-flip:checked + .tgl-btn:active:after {

@@ -1,27 +1,41 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import "./App.css";
 import AddNewNote from "./components/AddNewNote";
 import NoteList from "./components/NoteList";
 import NoteStatus from "./components/NoteStatus";
 import NoteHeader from "./components/NoteHeader";
 function App() {
-  const [nots, setNots] = useState([]);
+  function hanleReducer(state, { type, payload }) {
+    switch (type) {
+      case "add": {
+        return [...state, payload];
+      }
+
+      case "remove": {
+        return state.filter((n) => n.id != payload);
+      }
+      case "complete": {
+        const noeId = Number(payload.target.value);
+        const newNotes = state.map((n) =>
+          n.id == noeId ? { ...n, Finished: !n.Finished } : n
+        );
+        return newNotes;
+      }
+    }
+  }
+  const [nots, dispach] = useReducer(hanleReducer, []);
   const [sortbuy, setSortBuy] = useState("latest");
 
   const handleADDNots = (newNote) => {
-    setNots((prevnots) => [...prevnots, newNote]);
+    dispach({ type: "add", payload: newNote });
   };
 
   const handleDeleteNote = (id) => {
-    setNots((prevnots) => prevnots.filter((n) => n.id != id));
+    dispach({ type: "remove", payload: id });
   };
 
   const handlefinished = (e) => {
-    const noeId = Number(e.target.value);
-    const newNotes = nots.map((n) =>
-      n.id == noeId ? { ...n, Finished: !n.Finished } : n
-    );
-    setNots(newNotes);
+    dispach({ type: "complete", payload: e });
   };
 
   let sortNots = nots;
@@ -37,7 +51,6 @@ function App() {
     sortNots = [...nots].sort(
       (a, b) => Number(a.finished) - Number(b.finished)
     );
-
   return (
     <div className="container">
       <NoteHeader
